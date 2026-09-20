@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@theme {
+  /* ---- Kekia Sally brand palette ---- */
+  --color-burgundy-50: #fbeef1;
+  --color-burgundy-100: #f2ccd4;
+  --color-burgundy-200: #e29aab;
+  --color-burgundy-300: #cc6680;
+  --color-burgundy-400: #a83a56;
+  --color-burgundy-500: #7c1a34;
+  --color-burgundy-600: #6a1129;
+  --color-burgundy-700: #560d21;
+  --color-burgundy-800: #420a19;
+  --color-burgundy-900: #2c0611;
+
+  --color-gold-50: #fbf6e8;
+  --color-gold-100: #f3e6bd;
+  --color-gold-200: #e8d08a;
+  --color-gold-300: #d9b662;
+  --color-gold-400: #c99f44;
+  --color-gold-500: #b8862f;
+  --color-gold-600: #9a6d25;
+  --color-gold-700: #78541e;
+  --color-gold-800: #5a3f18;
+
+  --color-cream-50: #fffdf9;
+  --color-cream-100: #faf6ee;
+  --color-cream-200: #f2ead9;
+  --color-cream-300: #e7dabf;
+
+  --color-ink-900: #1c1310;
+  --color-ink-800: #241a17;
+  --color-ink-700: #2f2320;
+
+  --font-display: var(--font-playfair), "Times New Roman", serif;
+  --font-body: var(--font-jost), ui-sans-serif, system-ui, sans-serif;
+  --font-script: var(--font-script), cursive;
+}
+
+:root {
+  --bg: var(--color-cream-100);
+  --bg-elevated: var(--color-cream-50);
+  --fg: var(--color-ink-900);
+  --fg-muted: #6b5c54;
+  --border: var(--color-cream-300);
+  --accent: var(--color-burgundy-600);
+  --accent-2: var(--color-gold-500);
+}
+
+.dark {
+  --bg: var(--color-ink-900);
+  --bg-elevated: var(--color-ink-800);
+  --fg: var(--color-cream-100);
+  --fg-muted: #b9aca3;
+  --border: #3a2b26;
+  --accent: var(--color-burgundy-300);
+  --accent-2: var(--color-gold-300);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: var(--font-display);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+::selection {
+  background: var(--color-gold-300);
+  color: var(--color-ink-900);
+}
+
+/* Signature motif: a stitched thread divider, echoing the needle & thread in the wordmark */
+.stitch-divider {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.stitch-divider::before,
+.stitch-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-image: linear-gradient(90deg, var(--accent-2) 0 6px, transparent 6px 12px);
+  background-size: 12px 1px;
+  background-repeat: repeat-x;
+  opacity: 0.8;
+}
+
+.stitch-underline {
+  position: relative;
+  text-decoration: none;
+}
+.stitch-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 100%;
+  bottom: -3px;
+  height: 2px;
+  background-image: linear-gradient(90deg, currentColor 0 5px, transparent 5px 9px);
+  background-size: 9px 2px;
+  transition: right 0.35s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.stitch-underline:hover::after,
+.stitch-underline[data-active="true"]::after {
+  right: 0;
+}
+
+@keyframes stitch-draw {
+  from { stroke-dashoffset: 240; }
+  to { stroke-dashoffset: 0; }
+}
+
+.needle-loader {
+  stroke-dasharray: 240;
+  stroke-dashoffset: 240;
+  animation: stitch-draw 1.6s ease forwards;
+}
+
+/* Utility: subtle fabric texture panel */
+.panel-elevated {
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .needle-loader { animation: none; stroke-dashoffset: 0; }
+}

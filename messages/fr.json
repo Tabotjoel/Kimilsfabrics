@@ -1,0 +1,213 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "shop": "Boutique",
+    "women": "Femme",
+    "men": "Homme",
+    "about": "À propos",
+    "contact": "Contact",
+    "cart": "Panier",
+    "search": "Rechercher"
+  },
+  "hero": {
+    "eyebrow": "Kimil · Fabrics",
+    "title": "Cousu avec passion,\nporté avec confiance.",
+    "subtitle": "Des vêtements sur mesure pour elle et pour lui, coupés, ajustés et finis à la main, point par point.",
+    "cta": "Voir la collection",
+    "ctaSecondary": "Rencontrer le Designer"
+  },
+  "home": {
+    "shopByAudience": "Choisissez votre garde-robe",
+    "women": "Pour Elle",
+    "men": "Pour Lui",
+    "womenDesc": "Robes, tenues de tous les jours et mariage, ajustées à votre silhouette.",
+    "menDesc": "Costumes, chemises et tenues de cérémonie, à vos mesures.",
+    "featured": "Pièces vedettes",
+    "featuredSub": "Quelques favoris de l'atelier",
+    "viewAll": "Voir tous les produits",
+    "processTitle": "Pour Elle. Pour Lui. Fait pour durer.",
+    "process1Title": "Consultation",
+    "process1Desc": "Parlez-nous de l'occasion, de la coupe, du tissu dont vous rêvez.",
+    "process2Title": "Coupé et cousu",
+    "process2Desc": "Chaque pièce est coupée et cousue à la main, sur mesure.",
+    "process3Title": "Livré avec soin",
+    "process3Desc": "Expédié partout au Canada, fini, repassé et prêt à porter.",
+    "testimonialsTitle": "Porté avec confiance",
+    "newsletterTitle": "Restez proche de l'atelier",
+    "newsletterSub": "Nouveautés, réassorts et coulisses de la couture — sans pourriel, que du fil.",
+    "newsletterCta": "S'abonner"
+  },
+  "product": {
+    "addToCart": "Ajouter au panier",
+    "outOfStock": "Rupture de stock",
+    "size": "Taille",
+    "color": "Couleur",
+    "fabric": "Tissu",
+    "leadTime": "Délai de confection",
+    "days": "jours",
+    "madeToOrder": "Fait sur commande",
+    "description": "Description",
+    "quantity": "Quantité",
+    "youMayAlsoLike": "Vous aimerez aussi",
+    "selectSize": "Veuillez choisir une taille",
+    "selectColor": "Veuillez choisir une couleur",
+    "addedToCart": "Ajouté à votre panier"
+  },
+  "shop": {
+    "title": "Boutique",
+    "all": "Tout",
+    "filterAudience": "Garde-robe",
+    "filterCategory": "Catégorie",
+    "noResults": "Aucune pièce ne correspond à vos filtres pour le moment.",
+    "sortBy": "Trier par",
+    "sortNewest": "Nouveautés",
+    "sortPriceLow": "Prix : croissant",
+    "sortPriceHigh": "Prix : décroissant"
+  },
+  "cart": {
+    "title": "Votre panier",
+    "empty": "Votre panier est vide.",
+    "emptyCta": "Continuer vos achats",
+    "subtotal": "Sous-total",
+    "shipping": "Livraison",
+    "shippingNote": "Calculée à l'étape du paiement",
+    "total": "Total",
+    "checkout": "Passer à la caisse",
+    "remove": "Retirer",
+    "continueShopping": "Continuer vos achats"
+  },
+  "checkout": {
+    "title": "Paiement",
+    "contact": "Coordonnées",
+    "fullName": "Nom complet",
+    "email": "Courriel",
+    "phone": "Téléphone (facultatif)",
+    "shippingAddress": "Adresse de livraison",
+    "address": "Adresse",
+    "city": "Ville",
+    "province": "Province",
+    "postalCode": "Code postal",
+    "country": "Pays",
+    "notes": "Notes de commande (facultatif)",
+    "orderSummary": "Résumé de la commande",
+    "payNow": "Continuer vers le paiement",
+    "securePayment": "Paiement sécurisé propulsé par Stripe",
+    "processing": "Redirection vers le paiement sécurisé…"
+  },
+  "checkoutSuccess": {
+    "title": "Merci, votre commande est confirmée!",
+    "subtitle": "Une confirmation a été envoyée à votre courriel. L'atelier de Kimil Fabrics commencera bientôt votre pièce.",
+    "orderNumber": "Numéro de commande",
+    "backHome": "Retour à l'accueil",
+    "continueShopping": "Continuer vos achats"
+  },
+  "about": {
+    "title": "Les mains derrière Kimil Fabrics",
+    "body1": "Kimil Fabrics est un atelier de couture sur mesure fondé sur une conviction simple : le vêtement doit s'adapter à la personne, pas l'inverse. Chaque robe, costume et chemise qui quitte l'atelier est coupé, cousu et fini à la main.",
+    "body2": "Basé au Canada et au service d'une clientèle féminine et masculine, l'atelier allie techniques de couture classiques et un regard moderne sur la coupe, le tissu et la finition — fait pour durer, et porté avec confiance.",
+    "valuesTitle": "Ce qui guide l'atelier",
+    "value1Title": "Coupe précise",
+    "value1Desc": "Chaque mesure est prise avec soin pour que la pièce finie vous ressemble — parce qu'elle est faite pour vous.",
+    "value2Title": "Tissu honnête",
+    "value2Desc": "Des matières choisies pour leur tenue, leur mouvement et leur durabilité, pas seulement pour la photo.",
+    "value3Title": "Fait pour durer",
+    "value3Desc": "Des coutures renforcées et une construction réfléchie, pour que votre pièce vous accompagne pendant des années."
+  },
+  "contact": {
+    "title": "Contactez-nous",
+    "subtitle": "Des questions sur une commande sur mesure, une coupe ou un tissu? Écrivez-nous — Sally lit chaque message.",
+    "name": "Nom",
+    "email": "Courriel",
+    "message": "Message",
+    "send": "Envoyer le message",
+    "sent": "Merci — votre message a été envoyé.",
+    "location": "Basé au Canada, livraison partout au pays"
+  },
+  "footer": {
+    "tagline": "Cousu avec passion, porté avec confiance.",
+    "shop": "Boutique",
+    "company": "Entreprise",
+    "help": "Aide",
+    "about": "À propos",
+    "contact": "Contact",
+    "shipping": "Livraison et retours",
+    "faq": "FAQ",
+    "rights": "Tous droits réservés.",
+    "madeWith": "Conçu avec soin."
+  },
+  "theme": {
+    "light": "Clair",
+    "dark": "Sombre",
+    "toggle": "Changer de thème"
+  },
+  "common": {
+    "loading": "Chargement…",
+    "error": "Une erreur est survenue. Veuillez réessayer.",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "delete": "Supprimer",
+    "edit": "Modifier",
+    "back": "Retour",
+    "required": "Obligatoire"
+  },
+  "admin": {
+    "login": {
+      "title": "Connexion administrateur",
+      "subtitle": "Gérer la boutique Kimil Fabrics",
+      "email": "Courriel",
+      "password": "Mot de passe",
+      "signIn": "Se connecter",
+      "error": "Courriel ou mot de passe incorrect."
+    },
+    "nav": {
+      "dashboard": "Tableau de bord",
+      "products": "Produits",
+      "orders": "Commandes",
+      "viewSite": "Voir le site",
+      "signOut": "Se déconnecter"
+    },
+    "dashboard": {
+      "title": "Bon retour, {name}",
+      "totalProducts": "Produits",
+      "totalOrders": "Commandes",
+      "pendingOrders": "Commandes en attente",
+      "revenue": "Revenu (commandes payées)",
+      "recentOrders": "Commandes récentes"
+    },
+    "products": {
+      "title": "Produits",
+      "new": "Ajouter un produit",
+      "empty": "Aucun produit pour le moment — ajoutez votre première pièce.",
+      "nameEn": "Nom (anglais)",
+      "nameFr": "Nom (français)",
+      "descriptionEn": "Description (anglais)",
+      "descriptionFr": "Description (français)",
+      "price": "Prix (CAD)",
+      "compareAt": "Prix barré (facultatif)",
+      "audience": "Garde-robe",
+      "category": "Catégorie",
+      "sizes": "Tailles (séparées par des virgules)",
+      "colors": "Couleurs (séparées par des virgules)",
+      "fabric": "Tissu",
+      "leadTime": "Délai de confection (jours)",
+      "stock": "Quantité en stock",
+      "featured": "Mettre en vedette sur l'accueil",
+      "published": "Publié (visible sur le site)",
+      "images": "Photos du produit",
+      "uploadImages": "Téléverser des photos",
+      "save": "Enregistrer le produit",
+      "saved": "Produit enregistré.",
+      "deleteConfirm": "Supprimer ce produit? Cette action est irréversible."
+    },
+    "orders": {
+      "title": "Commandes",
+      "empty": "Aucune commande pour le moment.",
+      "status": "Statut",
+      "customer": "Client",
+      "date": "Date",
+      "total": "Total",
+      "orderNumber": "Commande n°",
+      "updateStatus": "Mettre à jour le statut"
+    }
+  }
+}

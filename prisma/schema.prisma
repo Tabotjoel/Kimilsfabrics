@@ -1,0 +1,115 @@
+// Kekia Sally — Database schema
+// Development uses SQLite (zero config). For production, point `url` at a
+// Postgres database (Neon, Supabase, Vercel Postgres, etc.) — see README.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ADMIN
+}
+
+enum Audience {
+  WOMEN
+  MEN
+  UNISEX
+}
+
+enum OrderStatus {
+  PENDING
+  PAID
+  PROCESSING
+  SHIPPED
+  COMPLETED
+  CANCELLED
+}
+
+model User {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  passwordHash String
+  role         Role     @default(ADMIN)
+  createdAt    DateTime @default(now())
+}
+
+model Category {
+  id        String    @id @default(cuid())
+  slug      String    @unique
+  nameEn    String
+  nameFr    String
+  products  Product[]
+  createdAt DateTime  @default(now())
+}
+
+model Product {
+  id            String      @id @default(cuid())
+  slug          String      @unique
+  nameEn        String
+  nameFr        String
+  descriptionEn String
+  descriptionFr String
+  audience      Audience    @default(UNISEX)
+  priceCents    Int
+  compareAtCents Int?
+  currency      String      @default("CAD")
+  images        String      @default("[]") // JSON string array of image URLs
+  sizes         String      @default("[]") // JSON string array e.g. ["S","M","L"]
+  colors        String      @default("[]") // JSON string array e.g. ["Burgundy","Gold"]
+  fabric        String?
+  madeToOrder   Boolean     @default(true)
+  leadTimeDays  Int?
+  stock         Int         @default(0)
+  featured      Boolean     @default(false)
+  published     Boolean     @default(true)
+  categoryId    String?
+  category      Category?   @relation(fields: [categoryId], references: [id])
+  orderItems    OrderItem[]
+  createdAt     DateTime    @default(now())
+  updatedAt     DateTime    @updatedAt
+}
+
+model Order {
+  id                String      @id @default(cuid())
+  orderNumber       String      @unique
+  customerName      String
+  customerEmail     String
+  shippingAddress   String
+  shippingCity      String
+  shippingProvince  String
+  shippingPostal    String
+  shippingCountry   String      @default("CA")
+  phone             String?
+  notes             String?
+  currency          String      @default("CAD")
+  subtotalCents     Int
+  shippingCents     Int         @default(0)
+  totalCents        Int
+  status            OrderStatus @default(PENDING)
+  stripeSessionId   String?     @unique
+  stripePaymentId   String?
+  items             OrderItem[]
+  createdAt         DateTime    @default(now())
+  updatedAt         DateTime    @updatedAt
+}
+
+model OrderItem {
+  id          String  @id @default(cuid())
+  orderId     String
+  order       Order   @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  productId   String?
+  product     Product? @relation(fields: [productId], references: [id])
+  nameEn      String
+  nameFr      String
+  size        String?
+  color       String?
+  unitCents   Int
+  quantity    Int
+  imageUrl    String?
+}

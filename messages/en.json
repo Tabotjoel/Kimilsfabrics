@@ -1,0 +1,213 @@
+{
+  "nav": {
+    "home": "Home",
+    "shop": "Shop",
+    "women": "Women",
+    "men": "Men",
+    "about": "About",
+    "contact": "Contact",
+    "cart": "Cart",
+    "search": "Search"
+  },
+  "hero": {
+    "eyebrow": "Kimil · Fabrics",
+    "title": "Stitched with Passion,\nWorn with Confidence.",
+    "subtitle": "Made-to-measure clothing for her and for him, cut, fitted and finished by hand in every stitch.",
+    "cta": "Shop the collection",
+    "ctaSecondary": "Meet the Designer"
+  },
+  "home": {
+    "shopByAudience": "Shop by wardrobe",
+    "women": "For Her",
+    "men": "For Him",
+    "womenDesc": "Gowns, everyday wear & bridal, tailored to your shape.",
+    "menDesc": "Suits, shirts & occasion wear, cut to your measurements.",
+    "featured": "Featured pieces",
+    "featuredSub": "A few favourites from the atelier",
+    "viewAll": "View all products",
+    "processTitle": "For Her. For Him. Made to Last.",
+    "process1Title": "Consultation",
+    "process1Desc": "Tell us the occasion, the fit, the fabric you dream of.",
+    "process2Title": "Cut & Stitched",
+    "process2Desc": "Every piece is hand-cut and sewn to order, thread by thread.",
+    "process3Title": "Delivered with Care",
+    "process3Desc": "Shipped across Canada, finished, pressed and ready to wear.",
+    "testimonialsTitle": "Worn with confidence",
+    "newsletterTitle": "Stay close to the atelier",
+    "newsletterSub": "New arrivals, restocks and behind-the-seams stories — no spam, just thread.",
+    "newsletterCta": "Subscribe"
+  },
+  "product": {
+    "addToCart": "Add to cart",
+    "outOfStock": "Out of stock",
+    "size": "Size",
+    "color": "Colour",
+    "fabric": "Fabric",
+    "leadTime": "Lead time",
+    "days": "days",
+    "madeToOrder": "Made to order",
+    "description": "Description",
+    "quantity": "Quantity",
+    "youMayAlsoLike": "You may also like",
+    "selectSize": "Please select a size",
+    "selectColor": "Please select a colour",
+    "addedToCart": "Added to your cart"
+  },
+  "shop": {
+    "title": "Shop",
+    "all": "All",
+    "filterAudience": "Wardrobe",
+    "filterCategory": "Category",
+    "noResults": "No pieces match your filters yet.",
+    "sortBy": "Sort by",
+    "sortNewest": "Newest",
+    "sortPriceLow": "Price: Low to High",
+    "sortPriceHigh": "Price: High to Low"
+  },
+  "cart": {
+    "title": "Your cart",
+    "empty": "Your cart is empty.",
+    "emptyCta": "Continue shopping",
+    "subtotal": "Subtotal",
+    "shipping": "Shipping",
+    "shippingNote": "Calculated at checkout",
+    "total": "Total",
+    "checkout": "Proceed to checkout",
+    "remove": "Remove",
+    "continueShopping": "Continue shopping"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "contact": "Contact information",
+    "fullName": "Full name",
+    "email": "Email",
+    "phone": "Phone (optional)",
+    "shippingAddress": "Shipping address",
+    "address": "Street address",
+    "city": "City",
+    "province": "Province",
+    "postalCode": "Postal code",
+    "country": "Country",
+    "notes": "Order notes (optional)",
+    "orderSummary": "Order summary",
+    "payNow": "Continue to payment",
+    "securePayment": "Secure payment powered by Stripe",
+    "processing": "Redirecting to secure payment…"
+  },
+  "checkoutSuccess": {
+    "title": "Thank you, your order is in!",
+    "subtitle": "A confirmation has been sent to your email. Kimil Fabric's atelier will begin work on your piece shortly.",
+    "orderNumber": "Order number",
+    "backHome": "Back to home",
+    "continueShopping": "Continue shopping"
+  },
+  "about": {
+    "title": "The hands behind Kimil Fabrics",
+    "body1": "Kimil Fabrics is a made-to-measure atelier founded on a simple belief: clothing should fit the person, not the other way around. Every gown, suit and shirt that leaves the studio is cut, stitched and finished by hand.",
+    "body2": "Based in Canada and serving clients for her and for him, the atelier blends classic tailoring techniques with a modern eye for fit, fabric and finish — made to last, and worn with confidence.",
+    "valuesTitle": "What guides the atelier",
+    "value1Title": "Precision fit",
+    "value1Desc": "Every measurement is taken with care so the finished piece feels like it was made for you — because it was.",
+    "value2Title": "Honest fabric",
+    "value2Desc": "Quality materials chosen for how they wear, move and last, not just how they photograph.",
+    "value3Title": "Made to last",
+    "value3Desc": "Reinforced seams and thoughtful construction, so your piece stays with you for years."
+  },
+  "contact": {
+    "title": "Get in touch",
+    "subtitle": "Questions about a custom order, fit, or fabric? Send a note — Sally reads every message.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send message",
+    "sent": "Thank you — your message has been sent.",
+    "location": "Based in Canada, shipping nationwide"
+  },
+  "footer": {
+    "tagline": "Stitched with passion, worn with confidence.",
+    "shop": "Shop",
+    "company": "Company",
+    "help": "Help",
+    "about": "About",
+    "contact": "Contact",
+    "shipping": "Shipping & Returns",
+    "faq": "FAQ",
+    "rights": "All rights reserved.",
+    "madeWith": "Built with care."
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "toggle": "Toggle theme"
+  },
+  "common": {
+    "loading": "Loading…",
+    "error": "Something went wrong. Please try again.",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "required": "Required"
+  },
+  "admin": {
+    "login": {
+      "title": "Admin sign in",
+      "subtitle": "Manage the Kimil Fabrics storefront",
+      "email": "Email",
+      "password": "Password",
+      "signIn": "Sign in",
+      "error": "Incorrect email or password."
+    },
+    "nav": {
+      "dashboard": "Dashboard",
+      "products": "Products",
+      "orders": "Orders",
+      "viewSite": "View site",
+      "signOut": "Sign out"
+    },
+    "dashboard": {
+      "title": "Welcome back, {name}",
+      "totalProducts": "Products",
+      "totalOrders": "Orders",
+      "pendingOrders": "Pending orders",
+      "revenue": "Revenue (paid orders)",
+      "recentOrders": "Recent orders"
+    },
+    "products": {
+      "title": "Products",
+      "new": "Add product",
+      "empty": "No products yet — add your first piece.",
+      "nameEn": "Name (English)",
+      "nameFr": "Name (French)",
+      "descriptionEn": "Description (English)",
+      "descriptionFr": "Description (French)",
+      "price": "Price (CAD)",
+      "compareAt": "Compare-at price (optional)",
+      "audience": "Wardrobe",
+      "category": "Category",
+      "sizes": "Sizes (comma-separated)",
+      "colors": "Colours (comma-separated)",
+      "fabric": "Fabric",
+      "leadTime": "Lead time (days)",
+      "stock": "Stock quantity",
+      "featured": "Feature on homepage",
+      "published": "Published (visible on site)",
+      "images": "Product photos",
+      "uploadImages": "Upload photos",
+      "save": "Save product",
+      "saved": "Product saved.",
+      "deleteConfirm": "Delete this product? This can't be undone."
+    },
+    "orders": {
+      "title": "Orders",
+      "empty": "No orders yet.",
+      "status": "Status",
+      "customer": "Customer",
+      "date": "Date",
+      "total": "Total",
+      "orderNumber": "Order #",
+      "updateStatus": "Update status"
+    }
+  }
+}
