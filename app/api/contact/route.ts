@@ -29,15 +29,23 @@ export async function POST(request: NextRequest) {
   const resend = new Resend(apiKey);
 
   try {
-    await resend.emails.send({
-      from: "Kekia Sally Website <onboarding@resend.dev>", // swap once your domain is verified
-      to,
-      replyTo: email,
-      subject: `New message from ${name} via the website`,
-      text: `From: ${name} (${email})\n\n${message}`,
-    });
-    return NextResponse.json({ ok: true });
-  } catch {
+  const { data, error } = await resend.emails.send({
+    from: "Kekia Sally Website <onboarding@resend.dev>",
+    to,
+    replyTo: email,
+    subject: `New message from ${name} via the website`,
+    text: `From: ${name} (${email})\n\n${message}`,
+  });
+
+  if (error) {
+    console.error("Resend error:", error);
     return NextResponse.json({ error: "Could not send message." }, { status: 500 });
   }
+
+  console.log("Email sent:", data?.id);
+  return NextResponse.json({ ok: true });
+} catch (err) {
+  console.error("Unexpected error sending email:", err);
+  return NextResponse.json({ error: "Could not send message." }, { status: 500 });
+}
 }
