@@ -4,24 +4,30 @@ import { prisma } from "@/lib/prisma";
 import type Stripe from "stripe";
 
 export async function POST(request: NextRequest) {
+  console.log("Webhook endpoint hit");
   const signature = request.headers.get("stripe-signature");
   const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET;
 
+  console.log("Has signature:", !!signature, "Has webhookSecret:", !!webhookSecret);
+
   if (!signature || !webhookSecret) {
+    console.log("Missing signature or webhook secret — returning early");
     return NextResponse.json({ error: "Webhook not configured" }, { status: 400 });
   }
 
   const rawBody = await request.text();
   let event: Stripe.Event;
 
-  try {
-    event = stripe.webhooks.constructEvent(rawBody, signature, webhookSecret);
-  } catch (err) {
-    const message = err instanceof Error ? err.message : "Invalid signature";
-    return NextResponse.json({ error: `Webhook Error: ${message}` }, { status: 400 });
-  }
+ try {
+  event = stripe.webhooks.constructEvent(rawBody, signature, webhookSecret);
+} catch (err) {
+  const message = err instanceof Error ? err.message : "Invalid signature";
+  return NextResponse.json({ error: `Webhook Error: ${message}` }, { status: 400 });
+}
 
-  if (event.type === "checkout.session.completed") {
+console.log("Signature verified successfully. Event type:", event.type);
+
+if (event.type === "checkout.session.completed") {
     const session = event.data.object as Stripe.Checkout.Session;
     const orderId = session.metadata?.orderId;
 
